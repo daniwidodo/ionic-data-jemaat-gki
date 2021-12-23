@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'details/:id',
+    loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
+  },
+  {
+    path: 'ibadah-details/:id',
+    loadChildren: () => import('./ibadah-details/ibadah-details.module').then( m => m.IbadahDetailsPageModule)
+  },
+  {
+    path: 'event-details/:id',
+    loadChildren: () => import('./event-details/event-details.module').then( m => m.EventDetailsPageModule)
+  },
+  {
+    path: 'agape-details/:id',
+    loadChildren: () => import('./agape-details/agape-details.module').then( m => m.AgapeDetailsPageModule)
+  },
 ];
 
 @NgModule({
