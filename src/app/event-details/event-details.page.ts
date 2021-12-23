@@ -12,7 +12,7 @@ export class EventDetailsPage implements OnInit {
 
   eventId: any;
   eventTitle: any;
-  eventJemaats: [];
+  eventJemaats: any;
 
   constructor( private activatedRoute: ActivatedRoute, private http: HttpClient, private panel: PanelService ) { }
 
