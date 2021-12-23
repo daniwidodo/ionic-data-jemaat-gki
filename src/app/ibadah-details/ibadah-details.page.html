@@ -1,10 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-back-button slot="start"></ion-back-button>
-    <ion-title>Data Ibadah</ion-title>
+    <ion-title>Data Ibadah Jemaat</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <h1>{{namaIbadah}}</h1>
+  <ol >
+    <li *ngFor="let name of dataJemaats"> {{name.namaLengkap}} - {{name.alamatDomain}} - {{name.nomorWhatsapp}}</li>
+
+  </ol>
+
 
 </ion-content>

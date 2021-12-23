@@ -1,9 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>agapeDetails</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Data Ibadah Jemaat Agape</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <h1>{{namaIbadah}}</h1>
+  <ol >
+    <li *ngFor="let name of dataJemaats"> {{name.namaLengkap}} - {{name.alamatDomain}} - {{name.nomorWhatsapp}}</li>
+
+  </ol>
+
 
 </ion-content>

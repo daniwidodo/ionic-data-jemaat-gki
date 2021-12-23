@@ -23,13 +23,13 @@ export class HomePage {
   }
 
   gotoIbadahDetails() {
-    this.router.navigate(['ibadah-details', this.ibadahId]);
+    this.router.navigate(['ibadah-details']);
   }
   gotoAgapeDetails() {
-    this.router.navigate(['details']);
+    this.router.navigate(['agape-details']);
   }
-  gotoEventsDetails() {
-    this.router.navigate(['details']);
+  gotoEventsDetails(eventId) {
+    this.router.navigate(['event-details', eventId]);
   }
 
   getIbadah()

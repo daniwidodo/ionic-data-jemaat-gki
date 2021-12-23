@@ -8,9 +8,9 @@
 
 <ion-content [fullscreen]="true">
   <ion-button (click)="gotoIbadahDetails()"> {{ ibadahTitle }}</ion-button>
-  <ion-button (click)="gotoDetails()"> {{ agapeTitle }}</ion-button>
+  <ion-button (click)="gotoAgapeDetails()"> {{ agapeTitle }}</ion-button>
   <div *ngFor="let name of eventArray">
-    <ion-button (click)="gotoDetails()"> {{name.title}} </ion-button>
+    <ion-button (click)="gotoEventsDetails(name.id)"> {{name.title}} </ion-button>
   </div>
 
 

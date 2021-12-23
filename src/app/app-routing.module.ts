@@ -16,7 +16,7 @@ const routes: Routes = [
     loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
   },
   {
-    path: 'ibadah-details/:id',
+    path: 'ibadah-details',
     loadChildren: () => import('./ibadah-details/ibadah-details.module').then( m => m.IbadahDetailsPageModule)
   },
   {
@@ -24,7 +24,7 @@ const routes: Routes = [
     loadChildren: () => import('./event-details/event-details.module').then( m => m.EventDetailsPageModule)
   },
   {
-    path: 'agape-details/:id',
+    path: 'agape-details',
     loadChildren: () => import('./agape-details/agape-details.module').then( m => m.AgapeDetailsPageModule)
   },
 ];

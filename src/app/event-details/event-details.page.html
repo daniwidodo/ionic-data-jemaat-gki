@@ -1,9 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>eventDetails</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Data Jemaat</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <h1>{{eventTitle}}</h1>
+
+  <ol >
+    <li *ngFor="let name of eventJemaats"> {{name.namaLengkap}} - {{name.alamatDomain}} - {{name.nomorWhatsapp}}</li>
+
+  </ol>
 
 </ion-content>
